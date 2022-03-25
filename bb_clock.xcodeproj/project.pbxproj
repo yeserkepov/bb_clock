@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB9E520B0D432224398E5AA0 /* Pods_bb_clock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93937F97DA378C3B95C61437 /* Pods_bb_clock.framework */; };
 		CE28C3F227EDD31A002FF563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28C3F127EDD31A002FF563 /* AppDelegate.swift */; };
 		CE28C3F427EDD31A002FF563 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28C3F327EDD31A002FF563 /* SceneDelegate.swift */; };
 		CE28C3F627EDD31A002FF563 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28C3F527EDD31A002FF563 /* ViewController.swift */; };
 		CE28C3F927EDD31A002FF563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE28C3F727EDD31A002FF563 /* Main.storyboard */; };
 		CE28C3FB27EDD31C002FF563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE28C3FA27EDD31C002FF563 /* Assets.xcassets */; };
 		CE28C3FE27EDD31C002FF563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE28C3FC27EDD31C002FF563 /* LaunchScreen.storyboard */; };
+		CE28C40627EDD7FE002FF563 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28C40527EDD7FE002FF563 /* AuthViewController.swift */; };
+		CE28C40A27EDDAB6002FF563 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE28C40927EDDAB6002FF563 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185E704BF4C2573E16EC9194 /* Pods-bb_clock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bb_clock.release.xcconfig"; path = "Target Support Files/Pods-bb_clock/Pods-bb_clock.release.xcconfig"; sourceTree = "<group>"; };
+		93937F97DA378C3B95C61437 /* Pods_bb_clock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bb_clock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC60EE439AB8EB5E668B7510 /* Pods-bb_clock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bb_clock.debug.xcconfig"; path = "Target Support Files/Pods-bb_clock/Pods-bb_clock.debug.xcconfig"; sourceTree = "<group>"; };
 		CE28C3EE27EDD31A002FF563 /* bb_clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bb_clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE28C3F127EDD31A002FF563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE28C3F327EDD31A002FF563 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		CE28C3FA27EDD31C002FF563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE28C3FD27EDD31C002FF563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE28C3FF27EDD31C002FF563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE28C40527EDD7FE002FF563 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		CE28C40927EDDAB6002FF563 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9E520B0D432224398E5AA0 /* Pods_bb_clock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				CE28C3F027EDD31A002FF563 /* bb_clock */,
 				CE28C3EF27EDD31A002FF563 /* Products */,
+				D645AC68C32D6D3E4F494B0E /* Pods */,
+				E29C3951757F9C931961B704 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +70,31 @@
 				CE28C3F127EDD31A002FF563 /* AppDelegate.swift */,
 				CE28C3F327EDD31A002FF563 /* SceneDelegate.swift */,
 				CE28C3F527EDD31A002FF563 /* ViewController.swift */,
+				CE28C40527EDD7FE002FF563 /* AuthViewController.swift */,
 				CE28C3F727EDD31A002FF563 /* Main.storyboard */,
 				CE28C3FA27EDD31C002FF563 /* Assets.xcassets */,
 				CE28C3FC27EDD31C002FF563 /* LaunchScreen.storyboard */,
+				CE28C40927EDDAB6002FF563 /* GoogleService-Info.plist */,
 				CE28C3FF27EDD31C002FF563 /* Info.plist */,
 			);
 			path = bb_clock;
+			sourceTree = "<group>";
+		};
+		D645AC68C32D6D3E4F494B0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC60EE439AB8EB5E668B7510 /* Pods-bb_clock.debug.xcconfig */,
+				185E704BF4C2573E16EC9194 /* Pods-bb_clock.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E29C3951757F9C931961B704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93937F97DA378C3B95C61437 /* Pods_bb_clock.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE28C40227EDD31C002FF563 /* Build configuration list for PBXNativeTarget "bb_clock" */;
 			buildPhases = (
+				9F343F9E7A94F19C8A8ECD09 /* [CP] Check Pods Manifest.lock */,
 				CE28C3EA27EDD31A002FF563 /* Sources */,
 				CE28C3EB27EDD31A002FF563 /* Frameworks */,
 				CE28C3EC27EDD31A002FF563 /* Resources */,
+				48FC85253411AD1E6CB95D8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +158,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE28C3FE27EDD31C002FF563 /* LaunchScreen.storyboard in Resources */,
+				CE28C40A27EDDAB6002FF563 /* GoogleService-Info.plist in Resources */,
 				CE28C3FB27EDD31C002FF563 /* Assets.xcassets in Resources */,
 				CE28C3F927EDD31A002FF563 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48FC85253411AD1E6CB95D8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bb_clock/Pods-bb_clock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bb_clock/Pods-bb_clock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bb_clock/Pods-bb_clock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F343F9E7A94F19C8A8ECD09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bb_clock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE28C3EA27EDD31A002FF563 /* Sources */ = {
@@ -140,6 +215,7 @@
 			files = (
 				CE28C3F627EDD31A002FF563 /* ViewController.swift in Sources */,
 				CE28C3F227EDD31A002FF563 /* AppDelegate.swift in Sources */,
+				CE28C40627EDD7FE002FF563 /* AuthViewController.swift in Sources */,
 				CE28C3F427EDD31A002FF563 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +360,7 @@
 		};
 		CE28C40327EDD31C002FF563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC60EE439AB8EB5E668B7510 /* Pods-bb_clock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +372,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,12 +384,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE28C40427EDD31C002FF563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 185E704BF4C2573E16EC9194 /* Pods-bb_clock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +402,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +414,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
