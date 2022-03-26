@@ -56,9 +56,10 @@ extension AuthViewController: UITextFieldDelegate {
                 Auth.auth().createUser(withEmail: email, password: password) { result, error in
                     if error == nil {
                         if let result = result {
-                            print(result.user.uid)
+                            //print(result.user.uid)
                             let ref = Database.database().reference().child("users")
                             ref.child(result.user.uid).updateChildValues(["name" : name, "email": email])
+                            self.dismiss(animated: true, completion: nil)
                         }
                     } else {
                         print(error?.localizedDescription as Any)
@@ -69,7 +70,11 @@ extension AuthViewController: UITextFieldDelegate {
             }
         } else {
             if !email.isEmpty && !password.isEmpty {
-                
+                Auth.auth().signIn(withEmail: email, password: password) { result, error in
+                    if error == nil {
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                }
             } else {
                 showAlert()
             }
