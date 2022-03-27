@@ -10,12 +10,13 @@
 		CB9E520B0D432224398E5AA0 /* Pods_bb_clock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93937F97DA378C3B95C61437 /* Pods_bb_clock.framework */; };
 		CE28C3F227EDD31A002FF563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28C3F127EDD31A002FF563 /* AppDelegate.swift */; };
 		CE28C3F427EDD31A002FF563 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28C3F327EDD31A002FF563 /* SceneDelegate.swift */; };
-		CE28C3F627EDD31A002FF563 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28C3F527EDD31A002FF563 /* ViewController.swift */; };
+		CE28C3F627EDD31A002FF563 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28C3F527EDD31A002FF563 /* MainViewController.swift */; };
 		CE28C3F927EDD31A002FF563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE28C3F727EDD31A002FF563 /* Main.storyboard */; };
 		CE28C3FB27EDD31C002FF563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE28C3FA27EDD31C002FF563 /* Assets.xcassets */; };
 		CE28C3FE27EDD31C002FF563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE28C3FC27EDD31C002FF563 /* LaunchScreen.storyboard */; };
 		CE28C40627EDD7FE002FF563 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28C40527EDD7FE002FF563 /* AuthViewController.swift */; };
 		CE28C40A27EDDAB6002FF563 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE28C40927EDDAB6002FF563 /* GoogleService-Info.plist */; };
+		CE28C40C27F04770002FF563 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28C40B27F04770002FF563 /* ResetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +26,14 @@
 		CE28C3EE27EDD31A002FF563 /* bb_clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bb_clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE28C3F127EDD31A002FF563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE28C3F327EDD31A002FF563 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE28C3F527EDD31A002FF563 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE28C3F527EDD31A002FF563 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE28C3F827EDD31A002FF563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE28C3FA27EDD31C002FF563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE28C3FD27EDD31C002FF563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE28C3FF27EDD31C002FF563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE28C40527EDD7FE002FF563 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		CE28C40927EDDAB6002FF563 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE28C40B27F04770002FF563 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +71,9 @@
 			children = (
 				CE28C3F127EDD31A002FF563 /* AppDelegate.swift */,
 				CE28C3F327EDD31A002FF563 /* SceneDelegate.swift */,
-				CE28C3F527EDD31A002FF563 /* ViewController.swift */,
+				CE28C3F527EDD31A002FF563 /* MainViewController.swift */,
 				CE28C40527EDD7FE002FF563 /* AuthViewController.swift */,
+				CE28C40B27F04770002FF563 /* ResetPasswordViewController.swift */,
 				CE28C3F727EDD31A002FF563 /* Main.storyboard */,
 				CE28C3FA27EDD31C002FF563 /* Assets.xcassets */,
 				CE28C3FC27EDD31C002FF563 /* LaunchScreen.storyboard */,
@@ -213,8 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE28C3F627EDD31A002FF563 /* ViewController.swift in Sources */,
+				CE28C3F627EDD31A002FF563 /* MainViewController.swift in Sources */,
 				CE28C3F227EDD31A002FF563 /* AppDelegate.swift in Sources */,
+				CE28C40C27F04770002FF563 /* ResetPasswordViewController.swift in Sources */,
 				CE28C40627EDD7FE002FF563 /* AuthViewController.swift in Sources */,
 				CE28C3F427EDD31A002FF563 /* SceneDelegate.swift in Sources */,
 			);

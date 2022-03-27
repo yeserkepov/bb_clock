@@ -16,11 +16,19 @@ class AuthViewController: UIViewController {
             if newValue {
                 mainLbl.text = "registration"
                 nameTF.isHidden = false
-                enterBTN.setTitle("enter", for: .normal)
+                enterButton.setTitle("enter", for: .normal)
+                resetButton.isHidden = true
+                alreadyLbl.text = "Already registered?"
+                regButton.setTitle("Register me", for: .normal)
+                repasswordTF.isHidden = false
             } else {
                 mainLbl.text = "enter"
                 nameTF.isHidden = true
-                enterBTN.setTitle("registration", for: .normal)
+                enterButton.setTitle("registration", for: .normal)
+                resetButton.isHidden = false
+                alreadyLbl.text = "Back to registration menu"
+                regButton.setTitle("Enter the app", for: .normal)
+                repasswordTF.isHidden = true
             }
         }
     }
@@ -30,7 +38,10 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var repasswordTF: UITextField!
-    @IBOutlet weak var enterBTN: UIButton!
+    @IBOutlet weak var enterButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var alreadyLbl: UILabel!
+    @IBOutlet weak var regButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,21 +49,27 @@ class AuthViewController: UIViewController {
         emailTF.delegate = self
         passwordTF.delegate = self
         repasswordTF.delegate = self
+        resetButton.isHidden = true
     }
     
     @IBAction func enterBtnPressed(_ sender: UIButton) {
         signUpFlag = !signUpFlag
     }
-}
-
-extension AuthViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    
+    @IBAction func resetBtnPressed(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ResetPasswordViewController") as! ResetPasswordViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func regBtnPressed(_ sender: UIButton) {
         let name = nameTF.text!
         let email = emailTF.text!
         let password = passwordTF.text!
+        let repassword = repasswordTF.text!
         
         if signUpFlag {
-            if !name.isEmpty && !email.isEmpty && !password.isEmpty {
+            if !name.isEmpty && !email.isEmpty && !password.isEmpty && password == repassword {
                 Auth.auth().createUser(withEmail: email, password: password) { result, error in
                     if error == nil {
                         if let result = result {
@@ -79,12 +96,18 @@ extension AuthViewController: UITextFieldDelegate {
                 showAlert()
             }
         }
-        return true
     }
     
+    //MARK: move to helper
     func showAlert() {
         let alert = UIAlertController(title: "Atention", message: "Please, make sure that fields are not empty!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: false, completion: nil)
     }
+    
+}
+
+//MARK: implement k/b hiding actions
+extension AuthViewController: UITextFieldDelegate {
+
 }
