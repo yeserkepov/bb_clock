@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DATABASE_URL</key>
+	<string>https://bb-clock-default-rtdb.europe-west1.firebasedatabase.app/</string>
+	<key>CLIENT_ID</key>
+	<string>364762966686-mv9r7j90vj34srsasal9484fq4ujgk2q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.364762966686-mv9r7j90vj34srsasal9484fq4ujgk2q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDgKBY1TFv3GPJW0PBy5aOCrS3c2apnt8g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>364762966686</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yesserkepov.bb-clock</string>
+	<key>PROJECT_ID</key>
+	<string>bb-clock</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bb-clock.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:364762966686:ios:66e79b0825b6f4f607e98f</string>
+</dict>
+</plist>

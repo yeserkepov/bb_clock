@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import FBSDKLoginKit
 
 class AuthViewController: UIViewController {
     
@@ -45,11 +46,7 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameTF.delegate = self
-        emailTF.delegate = self
-        passwordTF.delegate = self
-        repasswordTF.delegate = self
-        resetButton.isHidden = true
+        setup()
     }
     
     @IBAction func enterBtnPressed(_ sender: UIButton) {
@@ -105,6 +102,37 @@ class AuthViewController: UIViewController {
         present(alert, animated: false, completion: nil)
     }
     
+    func setup() {
+        let loginFB = FBLoginButton()
+        loginFB.permissions = ["email", "public_profile"]
+        loginFB.center.y = self.view.center.y + self.view.frame.height/2.5
+        loginFB.center.x = self.view.center.x
+        self.view.addSubview(loginFB)
+        loginFB.delegate = self
+        nameTF.delegate = self
+        emailTF.delegate = self
+        passwordTF.delegate = self
+        repasswordTF.delegate = self
+        resetButton.isHidden = true
+    }
+    
+}
+
+extension AuthViewController: LoginButtonDelegate {
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        if error == nil {
+            GraphRequest(graphPath: "me", parameters: ["fields": "Any"], tokenString: AccessToken.current?.tokenString, version: nil, httpMethod: .get).start(completion: { _, result, error in
+                if error == nil {
+                    print(result!)
+                }
+            })
+        }
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        // заглушка
+        print("fb logout")
+    }
 }
 
 //MARK: implement k/b hiding actions

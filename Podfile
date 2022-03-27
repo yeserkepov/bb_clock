@@ -11,5 +11,6 @@ target 'bb_clock' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'FBSDKLoginKit'
 
 end
